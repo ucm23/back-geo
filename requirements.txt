@@ -2,3 +2,5 @@ Flask
 PyMuPDF
 gunicorn
 pdfplumber
+flask_cors
+CORS
