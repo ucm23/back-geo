@@ -2,8 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import pdfplumber
 import re
-import fitz
-
+#import fitz
 
 app = Flask(__name__)
 CORS(app)
@@ -17,7 +16,6 @@ def extract_info_from_pdf(pdf_stream):
         "flt_o_lin": "",
         "flt_rec": "",
         "flt_seg": "",
-        "folio": "",
         "iva": "",
         "ret_iva": "",
         "total": ""
