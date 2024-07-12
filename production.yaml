@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  geotruck_python:
+    container_name: geotruck_python
+    image: gilbertolpz/orbnote:geotruck_python
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app:/app
+    environment:
+      - FLASK_ENV=production
+    restart: always
