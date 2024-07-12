@@ -62,5 +62,10 @@ def upload_file():
 
     return jsonify({"error": "Invalid file type"}), 400
 
+@app.route('/', methods=['GET'])
+def get_route():
+    return jsonify({"message": "runnig"}), 200
+
 if __name__ == '__main__':
+    print("Running")
     app.run(debug=True)
